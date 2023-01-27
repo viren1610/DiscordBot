@@ -30,8 +30,9 @@ client.on('messageCreate',gifmsg)
             let response = await fetch(url)
             let json =await response.json()
             console.log(json)
+            const index = Math.floor(Math.random() * json.results.length)
             
-            msg.channel.send(json.results[0].url);
+            msg.channel.send(json.results[index].url);
 
         }
     }
