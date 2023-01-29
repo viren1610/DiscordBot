@@ -23,7 +23,7 @@ client.on('messageCreate',(message)=>{
 
 client.on('messageCreate',gifmsg)
  async function gifmsg(msg){
-    if(msg.channel.id == '1068518251337896036'){
+    if(msg.channel.id == '1068939915422871642'){
         if(msg.content === '!gif'){
             msg.channel.send('gif!')
             let url = `https://tenor.googleapis.com/v2/search?q=office&key=${process.env.tenor}&client_key=my_test_app&limit=8`
